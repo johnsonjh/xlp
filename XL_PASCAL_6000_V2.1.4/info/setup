@@ -1,0 +1,88 @@
+#! /bin/ksh
+#
+# Run this shellscript by issuing "su -c setup".
+# It creates links under /usr/lpp/info/data, allowing the
+# InfoExplorer information for the individual products to
+# be brought up by entering the appropriate command(s):
+#
+# info -l xlC
+# info -l cset  (xlC and cset both bring up C Set ++ for AIX information)
+# info -l caix
+# info -l c     (c and caix both bring up C for AIX information)
+# info -l xlf
+# info -l xlp
+#
+# To copy these InfoExplorer files onto a hard disk, copy all the files from
+# one of the info subdirectories on the CD-ROM to a directory on
+# the hard disk, create a link that points to that directory: 
+#
+#     ln -s /directory/name/on/hard/disk /usr/lpp/info/data/prodname
+#
+# and edit the copied ispaths file to reflect the
+# path names of the .rom and .key files on hard disk.
+#
+ 
+# Verify command is running with root authority.
+if [[ $(whoami) != "root" ]] then
+	echo "Usage: su -c setup"
+	echo "(The command must be run with root authority.)"
+	exit 1
+fi
+
+typeset -i rc
+
+# These are the names to use in the command 'info -l <name>'.
+mnemonic_list="cset xlC caix xlf xlp c"
+
+# These are the CD-ROM directories where the 'ispaths' files reside.
+database_list="cset cset c xlf xlp c"
+
+for counter in 1 2 3 4 5 6
+do
+	answer="n" # Assume any existing link should not be replaced.
+	database="$(echo $database_list | cut -d\  -f $counter)"
+	mnemonic="$(echo $mnemonic_list | cut -d\  -f $counter)"
+	if [[ -a /usr/lpp/info/data/$mnemonic  || -L /usr/lpp/info/data/$mnemonic ]] then
+		echo
+		echo "'/usr/lpp/info/data/$mnemonic' already exists:"
+		ls -l /usr/lpp/info/data/$mnemonic
+		echo -n "Should it be replaced with a link to '/usr/cdrom/sws/$database/info'? (yes/no) "
+		read answer
+	else
+		answer="y" # If link does not exist, go ahead and create.
+	fi
+	case "$answer" in
+		y | Y | yes | YES) 
+			if [[ ! -L /usr/lpp/info/data/$mnemonic && -d /usr/lpp/info/data/$mnemonic ]] then
+				echo "Cannot replace a directory with a link."
+				echo "You will need to update/customize this directory manually."
+			else
+				rm -f /usr/lpp/info/data/$mnemonic 2>/dev/null
+				ln -s /usr/cdrom/sws/$database/info /usr/lpp/info/data/$mnemonic 2>/dev/null
+				rc="$?"
+				case "$rc" in
+					0)
+						echo
+						echo "To access /usr/cdrom/sws/$database/info, enter 'info -l $mnemonic'."
+						;;
+					*)
+						echo
+						echo "Could not create a soft link to /usr/lpp/info/data/$mnemonic from /usr/cdrom/sws/$database/info."
+						echo "Please establish this link manually as root."
+						;;
+				esac
+			fi
+			;;
+		n | N | no | NO | *)
+			echo "Leaving file unchanged." ;;
+	esac
+done
+
+echo
+echo "For instructions on copying InfoExplorer files to hard disk, see the comments"
+echo "at the top of this shell script."
+echo
+echo "Notes: The CD-ROM directory names xlf31 and xlp21 have been changed to"
+echo "       xlf and xlp."
+echo "       The CD-ROM directory structure has been rearranged.  You should"
+echo "       replace any existing links to info directories from previous CDs."

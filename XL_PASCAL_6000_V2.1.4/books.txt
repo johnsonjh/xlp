@@ -1,0 +1,149 @@
+Printing PostScript manuals
+---------------------------
+ 
+You can print any of the following manuals on a PostScript printer
+using a command similar to:
+ 
+    zcat <filename.psz | lpr
+ 
+o   You may need to specify a particular printer queue on the 'lpr'
+    command.
+o   You may not be able to print if there is not enough memory in
+    your PostScript printer; the amount required depends on which
+    manual is being printed.
+o   If your /var directory is too small to hold the temporary file
+    created during printing, you may be able to uncompress the file
+    to a filesystem that has enough space, then print (on a local
+    printer only) without making a temporary file.  For example:
+ 
+        zcat <filename.psz >/home/user/filename.ps
+        lpr -s /home/user/filename.ps
+ 
+ 
++-----------------------------------------------------------------+
+| Table 1. These manuals are in /usr/cdrom/sws/xlp/ps             |
++-------------+-------------------+-------------------------------+
+| FILE NAME   | TITLE (ORDER NO.) | DESCRIPTION                   |
++-------------+-------------------+-------------------------------+
+| xlplps.psz  | Licensed Program  | Defines the warranty criteria |
+|             | Specifications    | for IBM AIX XL Pascal         |
+|             | for IBM AIX XL    | Compiler/6000 Version 2.1     |
+|             | Pascal            |                               |
+|             | Compiler/6000     |                               |
+|             | Version 2.1       |                               |
+|             | (GC09-1776)       |                               |
++-------------+-------------------+-------------------------------+
+| xlpinst.psz | Installation      | Describes the process for     |
+|             | Instructions for  | installing IBM AIX XL Pascal  |
+|             | IBM AIX XL Pascal | Compiler/6000 Version 2.1     |
+|             | Compiler/6000     |                               |
+|             | Version 2.1       |                               |
+|             | (GC09-1775)       |                               |
++-------------+-------------------+-------------------------------+
+| xlpuser.psz | User's Guide for  | Describes how to compile,     |
+|             | IBM AIX XL Pascal | link, and run programs using  |
+|             | Compiler/6000     | the IBM AIX XL Pascal         |
+|             | Version 2.1       | Compiler/6000 Version 2.1     |
+|             | (SC09-1756)       | licensed program.  The        |
+|             |                   | various compiler options are  |
+|             |                   | also discussed as are         |
+|             |                   | optimization techniques.      |
++-------------+-------------------+-------------------------------+
+| xlpref.psz  | Language          | Describes the syntax and      |
+|             | Reference for IBM | semantics of the Pascal       |
+|             | AIX XL Pascal     | programming language          |
+|             | Compiler/6000     | implemented by the IBM AIX XL |
+|             | Version 2.1       | Pascal Compiler/6000 Version  |
+|             | (SC09-1757-00)    | 2.1 licensed program.         |
++-------------+-------------------+-------------------------------+
+ 
++-----------------------------------------------------------------+
+| Table 2. These manuals are in /usr/cdrom/sws/netls/ps for       |
+|          AIX 3.2.5 and AIX 4.1                                  |
++-------------+-------------------+-------------------------------+
+| FILE NAME   | TITLE / ORDER NO. | DESCRIPTION                   |
++-------------+-------------------+-------------------------------+
+| netmanag.psz| Managing Software | describes how to use the      |
+|             | Products with the | Administrator's Runtime Kit   |
+|             | Network License   | (ARK) to manage software      |
+|             | System, SC09-1660 | products that are licensed    |
+|             |                   | with the Application          |
+|             |                   | Developer's Kit (ADK)         |
+|             |                   | component of the Network      |
+|             |                   | Licensing System, NetLS.      |
++-------------+-------------------+-------------------------------+
+| netquick.psz| NetLS Quick Start | is a guide to initially       |
+|             | Guide, SC09-1661  | setting up the environment    |
+|             |                   | needed to support a software  |
+|             |                   | product licensed with NetLS.  |
++-------------+-------------------+-------------------------------+
+| managncs.psz| Managing NCS      | contains information about    |
+|             | Software,         | the Network Computing System  |
+|             | SC09-1834         | (NCS).  NCS is a set of tools |
+|             |                   | for heterogeneous distributed |
+|             |                   | computing.  These tools       |
+|             |                   | conform to the Network        |
+|             |                   | Computing Architecture.       |
++-------------+-------------------+-------------------------------+
+| netlsin.psz | Installing NetLS  | contains installation         |
+|             | for AIX Version   | instructions for the Network  |
+|             | 3.2.3             | Licensing System (NetLS).     |
++-------------+-------------------+-------------------------------+
+| netlsrn.psz | NetLS Release     | contains notes that apply to  |
+|             | Notes             | the current release of the    |
+|             |                   | Network Licensing System      |
+|             |                   | (NetLS).                      |
++-------------+-------------------+-------------------------------+
+ 
++-----------------------------------------------------------------+
+| Table 3. These manuals are in /usr/cdrom/sws/iforls/ps for      |
+|          AIX 3.2.5 and AIX 4.1                                  |
++-------------+-------------------+-------------------------------+
+| FILE NAME   | TITLE / ORDER NO. | DESCRIPTION                   |
++-------------+-------------------+-------------------------------+
+| iforsmg.psz | iFOR/LS System    | contains information          |
+|             | Management Guide, | regarding the installation,   |
+|             | SC23-2665         | configuration, management and |
+|             |                   | troubleshooting of iFOR/LS.   |
++-------------+-------------------+-------------------------------+
+| ifortat.psz | iFOR/LS Tips and  | contains technical planning   |
+|             | Techniques,       | information for setting up    |
+|             | SC23-2666         | the iFOR/LS environment.      |
++-------------+-------------------+-------------------------------+
+ 
+ 
+InfoExplorer manuals
+--------------------
+ 
+The InfoExplorer documentation related to this product is supplied
+as a set of plain files on the CD-ROM to minimize storage
+requirements.
+ 
+o   Run the shellscript "/usr/cdrom/sws/xlf/info/setup" as root to
+    create a set of links from the CD-ROM to the "/usr/lpp/info"
+    directory tree, so the InfoExplorer files can be accessed
+    directly from the CD-ROM.
+    After the links are set up, you can start an InfoExplorer
+    session for the documentation by issuing this command:
+ 
+        info -l xlp
+ 
+ 
+Viewing InfoExplorer Graphics
+-----------------------------
+ 
+It may be necessary to resize and redraw some graphic images before
+they will display properly.  Here are the steps to follow:
+ 
+1.  Try resizing the Info Graphic Figure Window.  This may be the
+    only action required to display the graphics properly.
+ 
+2.  Select the 1:1 or 1:2 scale listed in the lower, left corner of
+    the Graphic Figure Window.  After making your selection, click
+    on the Redraw button in the lower, right-hand corner.
+ 
+NOTE:  InfoExplorer sessions occasionally terminate after selecting
+to view a graphic image.  If this occurs, restart the InfoExplorer
+session.
+ 
+ 

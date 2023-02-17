@@ -1,0 +1,24 @@
+#!/bin/ksh
+# /usr/cdrom/sws/info/xlp/xlp_info 11/11/93 14:46:14
+#
+#
+# (C) COPYRIGHT International Business Machines Corp. 1993
+# All Rights Reserved
+# Licensed Material - Property of IBM
+#
+# US Government Users Restricted Rights - Use, duplication or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+############################################################################
+#                                                                          #
+#  xlp_info:                                                               #
+#                                                                          #
+#  Invokes the AIX XL Pascal Compiler/6000 V2.1 InfoExplorer database      #
+#                                                                          #
+# ------------------------------------------------------------------------ #
+#                                                                          #
+#  Syntax:  xlp_info                                                       #
+#                                                                          #
+############################################################################
+
+info -l /usr/cdrom/sws/xlp/info

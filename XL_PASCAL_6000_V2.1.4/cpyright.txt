@@ -1,0 +1,40 @@
+(C) Copyright IBM Corporation 1990, 1993.  All Rights Reserved.
+ 
+The following terms used in the CD Showcase material, are
+trademarks or service marks of the indicated companies:
+ 
++---------------------+-------------------------------------------+
+| TRADEMARK,          | COMPANY                                   |
+| REGISTERED          |                                           |
+| TRADEMARK OR        |                                           |
+| SERVICE MARK        |                                           |
++---------------------+-------------------------------------------+
+| UNIX, USL           | UNIX System Laboratories, Inc.            |
++---------------------+-------------------------------------------+
+| AT&T                | American Telephone and Telegraph          |
+|                     | Corporation                               |
++---------------------+-------------------------------------------+
+| ANSI                | American National Standards Institute     |
++---------------------+-------------------------------------------+
+| NetLS, Network      | Apollo Computer, Inc., a subsidiary of    |
+| Licensing System    | Hewlett-Packard Co.                       |
++---------------------+-------------------------------------------+
+| iFOR/LS,            | Gradient Technologies                     |
+| Information for     |                                           |
+| Operating and       |                                           |
+| Retrieval Licensing |                                           |
+| System              |                                           |
++---------------------+-------------------------------------------+
++---------------------+-------------------------------------------+
+| CRAY                | Cray Research, Inc.                       |
++---------------------+-------------------------------------------+
+| OSF, OSF Motif      | Open Software Foundation, Inc.            |
++---------------------+-------------------------------------------+
+| Micro Focus, Micro  | Micro Focus Ltd.                          |
+| Focus COBOL,        |                                           |
+| Toolbox, Dialog     |                                           |
+| System, Animator    |                                           |
++---------------------+-------------------------------------------+
+| PostScript          | Adobe Systems Incorporated                |
++---------------------+-------------------------------------------+
+ 

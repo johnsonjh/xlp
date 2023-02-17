@@ -1,0 +1,338 @@
+ 
+ 
+  -------------------------------------------------------------------
+                                     Licensed Program
+  IBM
+                                     Specifications
+  -------------------------------------------------------------------
+  AIX XL Pascal Compiler/6000
+  Version 2 Release 1
+  Program Number 5765-245
+ 
+ 
+  PRODUCT DESCRIPTION
+  ___________________
+ 
+  The IBM* AIX* XL Pascal Compiler/6000 Version 2.1 is a licensed
+  program product designed to offer a productive application develop-
+  ment environment for Pascal application developers.  It is a
+  follow-on version of the AIX XL Pascal Compiler/6000 Version 1.1
+  program product (5601-254).
+ 
+  The AIX XL Pascal Compiler/6000 licensed program product includes
+  the function of the XL Pascal runtime component.  Applications
+  developed using the AIX XL Pascal Compiler/6000 must be bound with
+  the XL Pascal runtime component for execution.  The runtime compo-
+  nent may be bound using dynamic binding which requires that the XL
+  Pascal runtime component be available at the time the application
+  is executed.  Alternatively, the runtime component may be stat-
+  ically bound to the application resulting in a larger object
+  module, but eliminating the requirement for the XL Pascal runtime
+  component in the execution environment.
+ 
+  The XL Pascal runtime component library routines include support
+  for the following types of functions that may be invoked by an XL
+  Pascal program:
+ 
+  o   Text file data transformations between the character form found
+      in text files and the internal data formats
+  o   Data file access and support functions
+  o   String manipulation functions
+ 
+  AIX XL PASCAL COMPILER/6000:  The XL Pascal compiler offers the
+  following features:
+ 
+  o   Improved execution performance
+ 
+  o   Enhanced optimization level -O3
+ 
+  o   POWER, POWER2*, and PowerPC* RISC System/6000 architectures are
+      fully exploited
+ 
+  o   Optional support for 4-byte Pascal POINTER data type
+ 
+  INTERLANGUAGE CALLS:  Interlanguage calls allow Pascal programs
+  written using XL Pascal to communicate with programs written in XL
+  C/6000 and XL Fortran Compiler/6000, C Set++ for AIX Version 2 and
+  C Set++ for AIX Version 3.
+ 
+  AIX TOOLS SUPPORT
+  _________________
+ 
+  The following AIX tools will continue to work with XL Pascal:
+ 
+  o   DBX symbolic debug program
+  o   PROF and GPROF profilers
+  o   LD linkage editor
+ 
+  These tools are part of AIX Version 3.2.5 or AIX 4.1.
+ 
+ 
+  SPECIFIED OPERATING ENVIRONMENT
+  _______________________________
+ 
+  MACHINE REQUIREMENTS
+  ____________________
+ 
+  This product is designed to run on the RISC System/6000
+  POWERstation* and POWERserver* hardware configured with at least
+  one supported display and keyboard or one ASCII terminal.
+ 
+  The minimum hardware requirements for the IBM AIX XL Pascal
+  Compiler/6000 Version 2.1 are:
+ 
+  o   RISC System/6000 system with a minimum of 16 MB of RAM
+  o   8 MB of DASD for Licensed Program Materials
+  o   64 MB of paging space
+ 
+  PROGRAMMING REQUIREMENTS
+  ________________________
+ 
+  The following programs are required for the AIX XL Pascal
+  Compiler/6000:
+ 
+  o   AIX Version 3.2.5 (5756-030) or AIX Version 4.1 (5765-393),
+      with TCP/IP installed
+ 
+  STANDARDS CONFORMANCE
+  _____________________
+ 
+  The XL Pascal compiler conforms to the following industry
+  standards:
+ 
+  o   ANSI/IEEE 770X3.97-1983, American National Standard Pascal Com-
+      puter Programming Language
+  o   ISO 7185-1983, Computer Programming Language Pascal -- Level 0
+  o   FIPS PUB 109 -- Pascal.
+ 
+  COMPATIBILITY
+  _____________
+  AIX XL Pascal Compiler/6000 is source-code compatible with IBM VS
+  Pascal (5668-767 and 5668-717) with some exceptions.
+ 
+  LICENSED PROGRAM MATERIALS AVAILABILITY
+  _______________________________________
+ 
+  o   Restricted Material: None.
+  o   These licensed programs are available without source licensed
+      program materials.  They are available in object code only.
+ 
+ 
+  SUPPLEMENTAL TERMS
+  __________________
+ 
+  MACHINE-READABLE DOCUMENTATION
+  ______________________________
+  The following general terms and conditions apply to customer use
+  and reproduction of the machine-readable documentation provided
+  with the AIX Version 3 for RISC System/6000:
+ 
+  o   Displayable versions may be copied and used on:
+ 
+      -   Processors which the AIX Version 3 for RISC System/6000 is
+          licensed for use by the customer
+ 
+      -   Any other processor in support of the licensed program (for
+          example, for printing hard copy or for reading displayable
+          copy).
+ 
+  o   You may not create a derivative work from the documentation.
+ 
+  o   The right is granted to make sufficient hard copies from dis-
+      playable versions distributed by IBM to support authorized use
+      of the AIX Version 3 for RISC System/6000 by the customer.
+ 
+  o   Each machine-readable or printed copy must contain the copy-
+      right notice.
+ 
+  o   Resale or distribution of displayable or hard copies is prohib-
+      ited.
+ 
+  TESTING PERIOD
+  ______________
+ 
+  o   Basic License: Two months.
+  o   DSLO License: Not applicable.
+ 
+  INSTALLATION/LOCATION LICENSE
+  _____________________________
+ 
+  Not applicable.  A separate license is required for each designated
+  machine on which the licensed program materials will be used.  See
+  the following section for usage restrictions.
+ 
+  USAGE RESTRICTION
+  _________________
+  XL Pascal is licensed per user of the program.  It operates under
+  the Network Licensing System** (NetLS**).  The new name for this
+  technology is Operation and Retrieval Licensing System**
+  (iFOR/LS**), and the two terms are interchangeable.  You can choose
+  between nodelocked licensing, concurrent-use licensing, or a combi-
+  nation of both.  A password or passwords are required for the
+  program to operate.
+ 
+  Each user of the licensed program requires a per user feature.  The
+  total number of per user features must be equal to or greater than
+  the number of users requiring access to the licensed program.  A
+  per user feature can be either a nodelocked feature or a
+  concurrent-use feature.  To increase the number of users who can
+  use the licensed program, nodelocked and/or concurrent-use features
+  must be ordered and a new password obtained.
+ 
+  If you choose concurrent-use licensing, XL Pascal will operate
+  under control of the iFOR/LS license server.  Concurrent-use
+  licenses allow users to access the program product from any machine
+  in a network.  The number of concurrent-use users is contained
+  within the iFOR/LS password.
+ 
+  If you choose nodelocked licensing, XL Pascal does not require the
+  iFOR/LS license server.  The nodelocked licensing option requires
+  that each node on which the program product operates has an author-
+  ized license for its unique system ID.  When invoked, the program
+  product requests a license password containing the license from the
+  nodelock license file.  This file contains a list of valid program
+  passwords.  The number of nodelocked users is contained within the
+  iFOR/LS password.
+ 
+  If you choose both nodelocked and concurrent-use licensing, mul-
+  tiple passwords will be issued.
+ 
+  TYPE/DURATION OF PROGRAM SERVICES
+  _________________________________
+ 
+  IBM Central Service, including IBM Support Center, will be avail-
+  able until discontinued by IBM with a minimum of six months written
+  notice.
+ 
+  REDISTRIBUTION INFORMATION
+  __________________________
+ 
+  Only the following AIX XL Pascal Compiler/6000 modules may be
+  copied onto your application distribution media when your applica-
+  tion is dependent on them:
+ 
+  o   XL Pascal library LIBXLP.A
+ 
+  o   XL Pascal message catalogs:
+ 
+      -   XLP00.CAT
+      -   XLP01.CAT
+      -   XLP02.CAT
+      -   XLP03.CAT
+ 
+  You may distribute the above modules as part of your software pro-
+  grams provided that you:
+ 
+  o   Reproduce and distribute the modules in object-code format
+      only, excluding header files.
+ 
+  o   Reproduce or distribute the modules only as part of an execut-
+      able software program or application.
+ 
+  o   Do not use IBM's name, logo, or trademarks to market software
+      products containing the modules.
+ 
+  o   Do not include any other part of the software as part of an
+      executable software program.
+ 
+  Each distribution copy of any of the above modules must be labelled
+  as follows:
+ 
+  CONTAINS IBM AIX XL PASCAL COMPILER/6000 RUNTIME MODULES.  (C) COP-
+  YRIGHT IBM CORPORATION 1990, 1993, 1994.  ALL RIGHTS RESERVED.
+ 
+  COPIES OF THESE MODULES ARE PROVIDED "AS IS".
+ 
+  The label information is not required for source and object code
+  that is integrated into your application program during the normal
+  compilation process.
+ 
+  WARRANTY
+  ________
+ 
+  This program is warranted as specified in the IBM license.
+ 
+  Licensed Program Specifications may be updated from time to time
+  and such updates may constitute a change in specifications.
+ 
+  For Distributed Systems License Option (DSLO) Licenses, warranty
+  service, if any, will be provided only through the Basic License
+  location.
+ 
+  Following the discontinuance of all program services, this program
+  will be provided "As Is" as specified in the IBM license.
+ 
+  TRADEMARKS
+  __________
+ 
+  The following terms, denoted by an asterisk (*), used in this pub-
+  lication are trademarks or service marks of IBM Corporation in the
+  United States or other countries:
+ 
+  +--------------------------------+--------------------------------+
+  | AIX                            | POWER2                         |
+  +--------------------------------+--------------------------------+
+  | AIX/6000                       | PowerPC                        |
+  +--------------------------------+--------------------------------+
+  | POWERserver                    | POWERstation                   |
+  +--------------------------------+--------------------------------+
+  | IBM                            | RISC System/6000               |
+  +--------------------------------+--------------------------------+
+ 
+  The following terms, denoted by two asterisks (**), used in this
+  publication, are trademarks or service marks of the indicated
+  companies:
+ 
+  +---------------+-------------------------------------------------+
+  | ANSI          | American National Standards Institute, Inc.     |
+  +---------------+-------------------------------------------------+
+  | iFOR/LS       | Gradient Technologies                           |
+  +---------------+-------------------------------------------------+
+  | Information   | Gradient Technologies                           |
+  | for Operating |                                                 |
+  | and Retrieval |                                                 |
+  | Licensing     |                                                 |
+  | System        |                                                 |
+  +---------------+-------------------------------------------------+
+  | NetLS,        | Apollo Computer, Inc., a subsidiary of Hewlett- |
+  | Network       | Packard Co.                                     |
+  | Licensing     |                                                 |
+  | System        |                                                 |
+  +---------------+-------------------------------------------------+
+ 
+ 
+  IBM
+ 
+  References in this publication
+  to IBM products, programs, or
+  services do not imply that IBM
+  intends to make these available
+  in all countries in which IBM
+  operates.  Any reference to an
+  IBM product, program, or service
+  is not intended to state or
+  imply that only IBM's product,
+  program, or service may be used.
+  Any functionally equivalent
+  product, program, or service
+  that does not infringe any of
+  IBM's intellectual property
+  rights may be used instead of
+  the IBM product, program, or
+  service.
+ 
+  Any other documentation with
+  respect to this licensed
+  program, including any documen-
+  tation referenced herein, is
+  provided for reference purposes
+  only and does not extend or
+  modify these specifications.
+ 
+  October 1994
+  Printed in U.S.A.  IBM is a reg-
+  istered trademark of Interna-
+  tional Business Machines
+  Corporation.
+ 
+ 
