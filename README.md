@@ -21,5 +21,5 @@
 
   ```sh
   /usr/bin/echo -ne '\x60\x00\x00\x00' | \
-  /usr/bin/dd of=/usr/lpp/xlp/lib/xlpentry bs=1 count=4 seek=2703800 conv=notrunc
+    /usr/bin/dd of=/usr/lpp/xlp/lib/xlpentry bs=1 count=4 seek=2703800 conv=notrunc
   ```
