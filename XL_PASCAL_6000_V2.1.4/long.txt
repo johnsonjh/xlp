@@ -1,0 +1,67 @@
+AIX XL Pascal Compiler/6000
+---------------------------
+ 
+The AIX XL Pascal Compiler/6000 product is designed to offer a
+productive application development environment that allows for the
+development and execution of applications for the IBM RISC
+System/6000 family of systems including the new PowerPC and POWER2
+systems.  In addition, the compiler now provides 4-byte pointer
+support.
+ 
+The AIX XL Pascal Compiler/6000 licensed program product includes
+the AIX XL Pascal Run Time Environment/6000 which supports the
+execution of applications developed by the compiler.  These
+products adhere to industry standards and are intended to protect
+the customer's application development investment by facilitating
+the portability of applications across systems.
+ 
+ 
+Standards Conformance / Source Code Compatibility
+-------------------------------------------------
+ 
+The AIX XL Pascal Compiler/6000 product aids migration and
+coexistence by conforming with the following Pascal standards and
+providing source code compatibility with various existing
+compilers.
+ 
+o   Industry Standards
+ 
+    -   ANSI 770X3.97-1983, American National Standard Pascal
+        Computer Programming Language
+    -   ISO 7185-1983, Computer Programming Language Pascal --
+        Level 0
+    -   FIPS PUB 109 -- Pascal
+ 
+o   Source Code Compatibility
+ 
+    The AIX XL Pascal Compiler/6000 product is source code
+    compatible with VS Pascal, with some exceptions.  The
+    exceptions are specified in the AIX XL Pascal Compiler/6000
+    User's Guide.
+ 
+ 
+Optimization Techniques
+-----------------------
+ 
+The XL Pascal product is based on IBM's latest optimizing
+technology.  Compiler optimization techniques include:
+ 
+o   Flow of control optimization, such as:
+    -   Elimination unreachable code
+    -   Straightening
+    -   Elimination of unnecessary branches
+o   Value numbering
+o   Reassociation (subscript optimization in loops)
+o   Dead code elimination (i.e. removal of code which computes
+    unused results)
+o   Common sub-expression elimination
+o   Constant folding
+o   Code motion for loop invariants
+o   Strength reduction
+o   Elimination of induction variables
+o   Elimination of redundant load/store sequences
+o   Store motion (moving stores out of loops)
+o   Global register allocation
+o   Instruction scheduling
+o   Exploitation of machine idioms
+ 

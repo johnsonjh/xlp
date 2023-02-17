@@ -1,0 +1,2 @@
+XL Pascal for AIX, Version 2 - enhancements for PowerPC and POWER2
+systems and 4-byte pointer support.

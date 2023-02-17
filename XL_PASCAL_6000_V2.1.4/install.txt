@@ -1,0 +1,167 @@
+How to Install IBM XL Pascal for AIX Licensed Program
+-----------------------------------------------------
+
+The following sections describe how the XL Pascal for AIX Version 2
+Release 1 is packaged, the system requirements for installation,
+and procedures for installing the licensed program.
+
+WARNINGS
+
+o   To run XL Pascal for AIX Version 2 Release 1 under Concurrent
+    Access, you must have access to a Network Licensing System
+    (NetLS) server which contains an active license for the XL
+    Pascal for AIX Version 2 Release 1 product.  For more
+    information, see "NetLS Requirements" on page 2.
+
+o   Installing XL Pascal for AIX Version 2 Release 1 causes any
+    previous version of XL Pascal to be overwritten without any
+    warning messages.  You will NOT be able to go back to the
+    version of XL Pascal that was previously installed without
+    completely re-installing that version.
+
+
+How the XL Pascal for AIX is Packaged
+-------------------------------------
+
+The following list summarizes the XL Pascal for AIX install images:
+
+xlp.cmp                The AIX XL Pascal for AIX
+
+xlp.rte                The XL Pascal runtime environment.  You need
+                       this to run programs compiled by the XL
+                       Pascal Compiler/6000.
+
+LANG.cmp               The messages and helps for the AIX XL Pascal
+                       for AIX, where LANG is one of the AIX
+                       national language codes.
+
+LANG.rte               The messages and helps for the XL Pascal
+                       runtime environment, where LANG is one of
+                       the AIX national language codes.
+
+netls.doc              Contains Network Licensing and IBM
+                       Registration Center information.
+
+National language codes are available in several languages.  For
+example, U.S. English XL Pascal for AIX messages have the CD-ROM
+program name "en_us.cmp".  If you install multiple languages for a
+product be sure that you install the preferred (or primary)
+language first.
+
+You must install one of these catalogs to see messages and listings
+in languages other than English.
+
+
+Prerequisite Tasks or Conditions
+--------------------------------
+
+o   You must log on with root authority.
+
+o   You must have installed the AIX Base Operating System (BOS)
+    Runtime, bos.obj.  The level of the AIX operating system
+    installed must be at least version 3.2.5 or version 4.1.
+
+o   You must install the xlp.cmp (the XL Pascal compiler) prior to
+    or with LANG.cmp.
+
+o   You must install the xlp.rte (the XL Pascal runtime
+    environment) prior to or with LANG.rte.
+
+o   No XL Pascal compilations should be in progress.
+
+o   You must have access to a valid XL Pascal password and, if for
+    concurrent access, access to a NetLS server.  For more
+    information, see "NetLS Requirements."
+
+o   You should have at least 8 MB of disk space available in
+    "/usr".
+
+
+How to Install XL Pascal
+------------------------
+
+1.  Insert the CD-ROM, containing XL Pascal installp images into
+    the CD-ROM player.
+
+2.  Use the AIX "smit" command to install the code.
+
+NOTES:
+
+1.  The directory on the CD-ROM that contains the install images
+    for XL Pascal is
+
+      /usr/cdrom/sws/xlp/installp
+
+2.  For more information about installation in general, refer to
+    the AIX Version 3 Installation Guide (SC23-2341) or AIX Version
+    4.1 Installation Guide, (SC23-2550).
+
+
+NetLS Requirements
+------------------
+
+To run XL Pascal, you must have purchased a license to use the
+product.  You will need to obtain one or more product passwords
+from IBM and install them on your NetLS license server(s).
+
+The procedure for obtaining passwords will vary depending on your
+country. Instructions for obtaining product passwords are available
+by selecting XL Pascal from the CD Showcase product catalog and
+clicking on "Ordering information".
+
+You will have to use the "ls_admin" command to add the license
+information for XL Pascal to the license database before you can
+begin using XL Pascal.  The license information consists of a
+vendor ID and password as well as one or more product passwords.
+For more information, refer to the "Administering Concurrent Use
+Licenses" section in the NetLS Quick Start Guide (SC09-1661), or
+the "Adding Passwords to License Servers" section in the Managing
+Software Products with the Network License System (SC09-1660).
+
+Instructions for installing NetLS are available by selecting NetLS
+from the CD Showcase product catalog and clicking on "Installation
+information".
+
+
+Viewing the XL Pascal Documentation
+-----------------------------------
+
+Documentation for XL Pascal is available in InfoExplorer format.
+
+To view the softcopy documentation via InfoExplorer, you may run
+the /usr/cdrom/sws/xlp/info/setup shell script while logged on with
+root authority.  This will create a set of links from the CD-ROM to
+the /usr/lpp/info/data directory.  After the links are set up, you
+can start an InfoExplorer session to display the XL Pascal
+documentation by issuing the following command:
+
+  info -l xlp
+
+NOTE:  The CD-ROM must be available and mounted on the /usr/cdrom/sws
+directory.
+
+To view InfoExplorer graphics, it may be necessary to resize and
+redraw some graphic images before they will display properly.  Here
+are the steps to follow:
+
+1.  Try resizing the InfoExplorer Graphic Figure Window.  This may
+    be the only action required to display the graphics properly.
+
+2.  Select the 1:1 or 1:2 scale listed in the lower, left corner of
+    the Graphic Figure Window.  After making your selection, click
+    on the Redraw button in the lower, right-hand corner.
+
+NOTE:  InfoExplorer sessions occasionally terminate after selecting
+to view a graphic image.  If this occurs, restart the InfoExplorer
+session.
+
+
+Printing the XL Pascal Documentation
+------------------------------------
+
+Documentation for XL Pascal is also available in PostScript format.
+
+Instructions for printing the PostScript manuals are available by
+selecting XL Pascal from the CD Showcase product catalog and
+clicking on "Product manuals".
+

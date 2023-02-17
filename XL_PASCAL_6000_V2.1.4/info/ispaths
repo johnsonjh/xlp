@@ -1,0 +1,25 @@
+# @(#)37        1.1  /usr/cdrom/sws/info/xlp/ispaths
+#
+# COMPONENT_NAME: DATAPREP
+#
+# ORIGINS: 43 27
+#
+# (C) COPYRIGHT International Business Machines Corp. 1991
+# All Rights Reserved
+# Licensed Material - Property of IBM
+#
+# US Government Users Restricted Rights - Use, duplication or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#
+################################################
+#         XL Pascal V2.1 database              #
+################################################
+id              0
+primnav         TRUE
+browse          TRUE
+name            pascal
+title           XL Pascal Compiler/6000 Version 2.1 Information
+sys             /usr/lpp/info/lib/%L/sys.sys
+rom             /usr/cdrom/sws/xlp/info/pascal.rom
+key             /usr/cdrom/sws/xlp/info/pascal.key

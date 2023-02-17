@@ -1,0 +1,113 @@
+0 031901151495 2
+netls.doc 3 R I  {
+xlpNetLS.doc 02.01.0003.0000 1 N U En_US AIX XL Pascal Compiler
+[
+%
+/usr/lib/objrepos 8
+/usr/lpp/xlp/lib 48
+INSTWORK 112
+%
+]
+}
+sp_sp.rte 3 R I  {
+xlprtemSp_SP.msg 02.01.0000.0000 1 N U Fr_CF AIX XL Pascal Run Time Environment/6000 Messages - Spanish
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/Sp_SP 24
+INSTWORK 112
+%
+]
+}
+jp_jp.rte 3 R I  {
+xlprtemJp_JP.msg 02.01.0000.0000 1 N U Jp_JP AIX XL Pascal Run Time Environment/6000 Messages - Japanese
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/Jp_JP 16
+INSTWORK 112
+%
+]
+}
+fr_fr.rte 3 R I  {
+xlprtemFr_FR.msg 02.01.0000.0000 1 N U Fr_FR AIX XL Pascal Run Time Environment/6000 Messages - French
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/Fr_FR 24
+INSTWORK 112
+%
+]
+}
+fr_cf.rte 3 R I  {
+xlprtemFr_CF.msg 02.01.0000.0000 1 N U Fr_CF AIX XL Pascal Run Time Environment/6000 Messages - Canadian French
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/Fr_CF 24
+INSTWORK 112
+%
+]
+}
+xlp.cmp 3 R I  {
+xlpcmp.obj 02.01.0004.0000 1 N B En_US AIX XL Pascal Compiler
+[
+>0 {
+*prereq bos.obj         v=3 r>1
+*prereq bos.obj         v>3
+}
+*prereq xlprte.obj      v=2 r=1
+%
+/usr/lib/objrepos 8
+/usr/lpp/xlp/lib 8960
+/usr/lpp/xlpcmp/inst_root/etc 528
+/usr/lpp/xlpcmp/inst_root/usr/lpp/xlp/lib 32
+/usr/bin 104
+/usr/share/man/cat1 40
+/usr/lpp/xlp/lib/default_msg 144
+INSTWORK 144
+%
+]
+}
+xlp.rte 3 R I  {
+xlprte.obj 02.01.0004.0000 1 N U En_US AIX XL Pascal Run Time Environment
+[
+%
+/usr/lib/objrepos 8
+/usr/lib 456
+/usr/lpp/xlprtemsg 16
+INSTWORK 112
+%
+]
+}
+en_us.rte 3 R I  {
+xlprtemEn_US.msg 02.01.0004.0000 1 N U En_US AIX XL Pascal Run Time Environment Messages - U.S. English
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/En_US 16
+INSTWORK 112
+%
+]
+}
+jp_jp.cmp 3 R I  {
+xlpcmpmJp_JP.msg 02.01.0000.0000 1 N U Jp_JP AIX XL Pascal Compiler/6000 Messages - Japanese
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/Jp_JP 128
+/usr/lib/nls/msg/ja_JP 32
+INSTWORK 112
+%
+]
+}
+en_us.cmp 3 R I  {
+xlpcmpmEn_US.msg 02.01.0004.0000 1 N U En_US AIX XL Pascal Compiler Messages - U.S. English
+[
+%
+/usr/lib/objrepos 8
+/usr/lib/nls/msg/En_US 144
+INSTWORK 112
+%
+]
+}
